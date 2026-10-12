@@ -1,35 +1,28 @@
-# minecraft-paperweight-skills
+# minecraft-agent-skills
 
-Agent skills for the Minecraft PaperMC / Paperweight toolchain ecosystem.
+Agent skills for Minecraft server development, PaperMC tools, and plugin ecosystems.
 
-## Overview
+## Skills
 
-Paperweight consists of three Gradle plugins:
+### Available Skills
 
-- **paperweight-core**: Used to build Paper itself from upstream Mojang/Spigot sources.
-- **paperweight-patcher**: Used to create and maintain forks of Paper or other paperweight-patcher-based forks (e.g., Purpur, Folia, Gale, custom server forks).
-- **paperweight-userdev**: Used to develop internal (NMS) plugins using Mojang mappings.
+| Skill | Description |
+| --- | --- |
+| [`minecraft-plugin-manifest`](skills/minecraft-plugin-manifest/SKILL.md) | Plugin metadata, `plugin.yml`, `paper-plugin.yml`, dependencies, permissions, and loaders |
+| [`minecraft-paperweight-patcher`](skills/paperweight-patcher/SKILL.md) | Patching, building, and maintaining Minecraft server forks layered on top of Paper |
 
-### Summary of Differences
+### Planned Skills
 
-| Plugin | Purpose | Target Use Case |
+| Skill | Target Area | Description |
 | --- | --- | --- |
-| `paperweight-core` | Build Paper | Core PaperMC server development |
-| `paperweight-patcher` | Create/maintain server forks | Custom server forks with layered patches |
-| `paperweight-userdev` | Develop NMS plugins | Plugins needing direct access to Mojang-mapped server internals |
-
-## Available Skills
-
-| Skill | Status | Description |
-| --- | --- | --- |
-| [`minecraft-paperweight-patcher`](skills/paperweight-patcher/SKILL.md) | Available | Patching, building, and maintaining Minecraft server forks layered on top of Paper |
-| `minecraft-paperweight-core` | Planned | Building Paper server core from upstream Mojang/Spigot |
-| `minecraft-paperweight-userdev` | Planned | Developing NMS plugins using Mojang mappings |
+| `minecraft-paperweight-core` | Server Core | Building Paper server core from upstream Mojang/Spigot |
+| `minecraft-paperweight-userdev` | NMS Plugin Dev | Developing NMS plugins using Mojang mappings and paperweight-userdev |
+| `minecraft-plugin-bootstrap` | Architecture | Plugin lifecycle, bootstrappers, custom classloaders, and DI setup |
 
 ## Installation
 
 Install using the `skills` CLI:
 
 ```bash
-npx skills add https://github.com/YueMi-Development/minecraft-paperweight-skills
+npx skills add https://github.com/YueMi-Development/minecraft-agent-skills
 ```

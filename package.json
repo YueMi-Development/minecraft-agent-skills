@@ -1,5 +1,5 @@
 {
-  "name": "minecraft-paperweight-skills",
+  "name": "minecraft-agent-skills",
   "version": "1.0.0",
   "description": "Agent skill for Minecraft PaperMC Tools.",
   "keywords": [
@@ -14,7 +14,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/YueMi-Development/minecraft-paperweight-skills"
+    "url": "https://github.com/YueMi-Development/minecraft-agent-skills.git"
   },
   "extra": {
     "ai-agent-skill": "skills/*/SKILL.md"
